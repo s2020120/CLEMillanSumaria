@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class bracelet extends AppCompatActivity implements View.OnClickListener {
+public class Bracelet extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,11 +26,11 @@ public class bracelet extends AppCompatActivity implements View.OnClickListener 
 
     @Override
     public void onClick(View v) {
-        Intent intent = new Intent(bracelet.this, MainActivity.class);
+        Intent intent = new Intent(Bracelet.this, MainActivity.class);
         startActivity(intent);
-        Intent intent1 = new Intent(bracelet.this, Retail.class);
+        Intent intent1 = new Intent(Bracelet.this, Retail.class);
         startActivity(intent1);
-        Intent intent2 = new Intent(bracelet.this, WholeSale.class);
+        Intent intent2 = new Intent(Bracelet.this, WholeSale.class);
         startActivity(intent2);
     }
 }

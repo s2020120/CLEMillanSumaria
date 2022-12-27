@@ -7,20 +7,21 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class rings extends AppCompatActivity implements View.OnClickListener {
+public class Necklace extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ring);
+        setContentView(R.layout.activity_necklace);
         Button btnReturn;
         btnReturn = (Button) findViewById(R.id.btn_return);
         btnReturn.setOnClickListener(this);
+
     }
 
     @Override
     public void onClick(View v) {
-        Intent intent = new Intent(rings.this, MainActivity.class);
+        Intent intent = new Intent(Necklace.this, MainActivity.class);
         startActivity(intent);
     }
 }

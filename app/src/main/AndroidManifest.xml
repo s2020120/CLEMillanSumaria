@@ -27,28 +27,28 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".rings"
+            android:name=".Rings"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".earrings"
+            android:name=".Earrings"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".necklace"
+            android:name=".Necklace"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".bracelet"
+            android:name=".Bracelet"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
