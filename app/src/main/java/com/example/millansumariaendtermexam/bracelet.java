@@ -14,9 +14,13 @@ public class bracelet extends AppCompatActivity implements View.OnClickListener 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bracelet);
 
-        Button btnReturn;
+        Button btnReturn, btnRetail, btnWholeSale;
         btnReturn = (Button) findViewById(R.id.btn_return);
         btnReturn.setOnClickListener(this);
+        btnRetail = (Button) findViewById(R.id.retailbtn);
+        btnRetail.setOnClickListener(this);
+        btnWholeSale = (Button) findViewById(R.id.wholesalebtn);
+        btnWholeSale.setOnClickListener(this);
 
     }
 
@@ -24,5 +28,9 @@ public class bracelet extends AppCompatActivity implements View.OnClickListener 
     public void onClick(View v) {
         Intent intent = new Intent(bracelet.this, MainActivity.class);
         startActivity(intent);
+        Intent intent1 = new Intent(bracelet.this, Retail.class);
+        startActivity(intent1);
+        Intent intent2 = new Intent(bracelet.this, WholeSale.class);
+        startActivity(intent2);
     }
 }
