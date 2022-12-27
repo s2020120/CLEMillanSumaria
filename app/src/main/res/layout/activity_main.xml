@@ -67,7 +67,7 @@
                     app:srcCompat="@drawable/bracelets" />
 
                 <Button
-                    android:id="@+id/button1"
+                    android:id="@+id/braceletbtn"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
@@ -184,7 +184,7 @@
                     app:srcCompat="@drawable/ring" />
 
                 <Button
-                    android:id="@+id/bringbtn"
+                    android:id="@+id/ringbtn"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
