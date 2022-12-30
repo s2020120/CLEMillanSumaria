@@ -13,15 +13,37 @@ public class Earrings extends AppCompatActivity implements View.OnClickListener 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_earrings);
-        Button btnReturn;
+        Button btnReturn, btnRetail, btnWholeSale;
+
         btnReturn = (Button) findViewById(R.id.btn_return);
         btnReturn.setOnClickListener(this);
+
+        btnRetail = (Button) findViewById(R.id.retailbtn);
+        btnRetail.setOnClickListener(this);
+
+        btnWholeSale = (Button) findViewById(R.id.wholesalebtn);
+        btnWholeSale.setOnClickListener(this);
 
     }
 
     @Override
     public void onClick(View v) {
-        Intent intent = new Intent(Earrings.this, MainActivity.class);
-        startActivity(intent);
+        switch (v.getId()) {
+            case R.id.btn_return:
+                Intent intent = new Intent(Earrings.this, MainActivity.class);
+                startActivity(intent);
+                break;
+
+            case R.id.retailbtn:
+                Intent intent2 = new Intent(Earrings.this, Retail.class);
+                startActivity(intent2);
+                break;
+
+            case R.id.wholesalebtn:
+                Intent intent3 = new Intent(Earrings.this, WholeSale.class);
+                startActivity(intent3);
+                break;
+            default: break;
+        }
     }
 }
