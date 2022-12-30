@@ -29,11 +29,22 @@ public class Bracelet extends AppCompatActivity implements View.OnClickListener 
 
     @Override
     public void onClick(View v) {
-        Intent intent = new Intent(Bracelet.this, MainActivity.class);
-        startActivity(intent);
-        Intent intent2 = new Intent(Bracelet.this, Retail.class);
-        startActivity(intent2);
-        Intent intent3 = new Intent(Bracelet.this, WholeSale.class);
-        startActivity(intent3);
+        switch (v.getId()) {
+            case R.id.btn_return:
+                Intent intent = new Intent(Bracelet.this, MainActivity.class);
+                startActivity(intent);
+                break;
+
+            case R.id.retailbtn:
+                Intent intent2 = new Intent(Bracelet.this, Retail.class);
+                startActivity(intent2);
+                break;
+
+            case R.id.wholesalebtn:
+                Intent intent3 = new Intent(Bracelet.this, WholeSale.class);
+                startActivity(intent3);
+                break;
+            default: break;
+        }
     }
 }

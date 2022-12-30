@@ -10,15 +10,15 @@ import android.widget.Toast;
 
 public class Retail extends AppCompatActivity implements View.OnClickListener {
     EditText etMaterials, etGems;
-    String strMaterials, strGems, resultMessage;
+    String strMaterials, strGems;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_retail);
-        Button btnCompute;
-        btnCompute = (Button) findViewById(R.id.computebtn);
+        Button btnComputeRtl;
+        btnComputeRtl = (Button) findViewById(R.id.computebtnRtl);
 
-        btnCompute.setOnClickListener(this);
+        btnComputeRtl.setOnClickListener(this);
 
     }
     @Override
@@ -40,7 +40,7 @@ public class Retail extends AppCompatActivity implements View.OnClickListener {
         int rawMaterials = Integer.parseInt(strMaterials);
         int rawGems = Integer.parseInt(strGems);
 
-        int Price = rawGems+rawMaterials;
+        int Price = rawGems+rawMaterials+20;
         Bundle args = new Bundle();
         args.putString("result", String.valueOf(Price));
 
